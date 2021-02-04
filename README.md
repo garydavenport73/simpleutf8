@@ -1,3 +1,5 @@
+simpleutf8.py
+
 A python script that generates UTF-8 Unicode Tables
 
 Gary Davenport
@@ -23,8 +25,8 @@ Input-none
 Output-a text file that writes to the current directory
 of the simpleutf8.py file.  
 
-The output file is named simplutf8out.txt
+The output file is named simpleutf8out.txt
 
 Output can be checked against the website:
-https://www.ssec.wisc.edu/~tomw/java/unicode.html
+https://www.ssec.wisc.edu/~tomw/java/unicode.html 
 
