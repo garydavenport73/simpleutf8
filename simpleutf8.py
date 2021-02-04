@@ -1,25 +1,23 @@
 # simpleutf8.py
-# Gary Davenport
-# 2/4/2021
 #
-# A python script to generate ut-8 codeblock charts.
-# It works reasonably well for its purpose.
-# (tested in Python 3.8.6 64=bit)
+# A python script that generates UTF-8 Unicode Tables
+# Gary Davenport 2/4/2021
 #
-# I mainly made this so I could inspect characters
-# for video games/other uses by visually scanning through
-# single condensed text file containing characters.
-#
-# if file is too large, you can change the numbers 
+# This is a python script to generate ut-8 codeblock charts. It works reasonably well 
+# for its purpose. It was tested in Python 3.8.6 64-bit.
+# I mainly made this so I could inspect characters for video games and ther uses by 
+# visually scanning through single condensed text file containing utf-8 characters.
+# It opens ok for me in notepad, but the output file is 299kb and 5120 lines long.
+# If the file is too large, you can change the numbers 
 # in the range(2,4096) to different starting/ending numbers.
-# it opens ok for me in notepad, but the output file is 
-# 299kb and 5120 lines long.
-# 
-# input-none
-# output-a text file containing tables of utf-8 characters
 #
-# output can be checked against website
-# https://www.ssec.wisc.edu/~tomw/java/unicode.html
+# Input-none
+#
+# Output-a text file that writes to the current directory of the simpleutf8.py file.
+#
+# The output file is named simpleutf8out.txt
+#
+# Output can be checked against the website: https://www.ssec.wisc.edu/~tomw/java/unicode.html
 def main():
     outFile=open("simpleutf8out.txt","w",encoding="utf-8")                                  #open file for writing tables
     print("\nSimple Unicode Block Generator for UTF-8")
@@ -47,4 +45,3 @@ def main():
             outFile.write(hexString+"\t"+pythonString+"\t"+str(i*16)+" - "+str(i*16+j)+" \t"+"not printable\n") # same to file with carriage return
     outFile.close()
 main()
-
