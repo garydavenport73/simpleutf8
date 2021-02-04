@@ -21,7 +21,7 @@
 def main():
     outFile=open("simpleutf8out.txt","w",encoding="utf-8")                                  #open file for writing tables
     print("\nSimple Unicode Block Generator for UTF-8")
-    outFile.write("Simple Unicode Block Generator for UTF-8"+"\n")
+    outFile.write("Simple Unicode Block Generator for UTF-8\n")
     for i in range(2,4096):                                                                 # start at 2, because 0 and 1 are mainly nonsense and don't format well
         string=""           
         hexString=hex(i*16)[0:2]+ (6-len(hex(i*16)))*"0" + hex(i*16)[2:-1] + "x"            # this is a hex in 6 character form
