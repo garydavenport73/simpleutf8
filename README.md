@@ -27,6 +27,8 @@ of the simpleutf8.py file.
 
 The output file is named simpleutf8out.txt
 
+There is a copy of that output file in this github repository.
+
 Output can be checked against the website:
 https://www.ssec.wisc.edu/~tomw/java/unicode.html 
 
